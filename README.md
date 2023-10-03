@@ -60,3 +60,23 @@ Setting Up MySQL Workbench Connection:
 6. For the password, select "Store in Vault" and enter the instance password.
 7. Click "Test Connection" to ensure the connection works.
 8. Click "OK" to create the connection.
+
+
+# Experience Using MySQL Workbench
+Using MySQL Workbench I was successfully able to create and display databases, design tables, and generate two separate entity-relationship diagrams (ERDs) using both GCP and Azure. Screenshots of both the GCP and Azure database configurations are located in their respective folders.
+
+# Challenges Using MySQL Workbench
+One error I initially faced was creating the ERD. I rewatched the lecture from last week and followed the following steps to overcome this challenge:
+
+1. Go to the "Database" menu and select "Reverse Engineer." This will open the Reverse Engineering Wizard.
+3. In the wizard, you'll be prompted to select a connection. Choose the database connection you previously established.
+4. Click "Next" to start the process. MySQL Workbench will fetch the structure and objects of the selected database.
+5. You can select which schema objects you want to include in your ERD. Typically, you'll want to include tables, views, and routines. Click "Next" to proceed.
+6. Specify how your ERD should be named and where it should be placed within MySQL Workbench. Click "Next" to continue.
+7. Review your settings and click "Execute" to generate the ERD. MySQL Workbench will analyze the database and create the visual ERD representation.
+8.  After completion, your ERD will appear in MySQL Workbench. You can customize it by rearranging tables, adjusting layouts, and adding annotations as needed.
+
+
+
+
+
