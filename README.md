@@ -4,11 +4,28 @@ MySQL on Cloud Platforms - Azure and GCP
 # Azure Configuration Setup Process
 Resource Type: Azure Database for MySql; Deployment option: Flexible, Tier: Burstable Compute: B1S [$6.21 p/month] or B1MS [$12.41 p/month]
 
-1. 
-2. 
-3. 
-4.
-5.
+1. In the Azure portal, click on the "+ Create a resource" button on the left-hand menu.
+2. In Azure services, select 'Azure Database for MySQL servers' and then hit '+create'
+4. Choose 'Flexible server'
+5. In Basics:
+      - Select 'Azure for Students' as the Subscription.
+      - Name the server and choose 'for development or hobby projects' as the workload.
+      - For compute + storage, choose 'Burstable, B1ms.'
+      - Create an admin username and password.
+6. In Networking: Under firewall rules: select '+add 0.0.0.0' (public IP address)
+7. Azure will validate your configuration to check for any errors or conflicts.
+8. Click the "Create" button to deploy the MySQL instance
+
+Setting Up MySQL Workbench Connection:
+1. Open MySQL Workbench.
+2. Create a new connection.
+3. Name it for Azure.
+4. Set the Hostname to the Server Name provided in the Azure instance.
+5. Use Port 3306.
+6. Ensure the Username matches the Azure server admin login.
+7. Securely store the password.
+8. Click 'Test Connection' to confirm connectivity.
+9. Click 'OK' to create the connection.
 
 
 
